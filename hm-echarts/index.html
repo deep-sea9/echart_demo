@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <!-- 必须的 meta 标签 -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap 的 CSS 文件 -->
+  <link rel="stylesheet" href="./assets/lib/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/iconfont/iconfont.css" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
+
+  <title>Echarts 实战项目</title>
+</head>
+
+<body>
+  <div class="viewport">
+    <div class="leftside">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo2.png" alt="logo" />
+      </a>
+      <ul class="nav">
+        <li><a href="./dashboard.html" target="fm">图表概览</a></li>
+        <li><a href="./student.html" target="fm">学员信息</a></li>
+        <li><a href="./score.html" target="fm">成绩录入</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="top">
+        <div class="init">点我初始化数据</div>
+        <div class="title">Echarts 实战项目</div>
+        <div class="logout">
+          <a href="javascript:;">
+            <span class="iconfont icon-tuichu"></span>
+            退出
+          </a>
+        </div>
+      </div>
+      <div class="content">
+        <iframe src="./dashboard.html" name="fm" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/lib/axios.js"></script>
+  <script src="./assets/utils/request.js"></script>
+  <script src="./assets/utils/common.js"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

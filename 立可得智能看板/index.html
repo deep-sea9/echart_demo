@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>立可得 智能看板</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./fonts/icomoon.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <script src="./js/echarts.min.js"></script> -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/echarts.js"></script>
+    <!-- <script src="./js/flexible.js"></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="column">
+            <!-- 数据概览 -->
+            <div class="panel overview">
+                <div class="inner">
+                    <div class="item">
+                        <p>2,190</p>
+                        <span><i class="icon-dot"></i>设备总数</span>
+                    </div>
+                    <div class="item">
+                        <p>190</p>
+                        <span><i class="icon-dot"></i>季度新增</span>
+                    </div>
+                    <div class="item">
+                        <p>3,001</p>
+                        <span><i class="icon-dot"></i>运营设备</span>
+                    </div>
+                    <div class="item">
+                        <p>108</p>
+                        <span><i class="icon-dot"></i>异常设备</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 设备监控 -->
+            <div class="panel monitor">
+                <div class="inner">
+                    <div class="tabs">
+                        <a class="active" href="javascript:;">故障设备监控</a>
+                        <a href="javascript:;">异常设备监控</a>
+                    </div>
+                    <div class="content">
+                        <div class="head">
+                            <span>异常时间</span>
+                            <span>异常地址</span>
+                            <span>异常代码</span>
+                        </div>
+                        <div class="carousel">
+                            <ul>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211001</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211002</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211003</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211004</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211005</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211006</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211007</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211008</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211009</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>2110010</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>2110011</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>2110012</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>2110013</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>2110014</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>2110015</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211001</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211002</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211003</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211004</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211005</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211006</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211007</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211008</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>211009</span></li>
+                                <li><span>20210520</span><span>广东省深圳市宝安区创维创新谷B座南区4楼401</span><span>2110010</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content" style="display: none;">
+                        <div class="head">
+                            <span>异常时间</span>
+                            <span>异常地址</span>
+                            <span>异常代码</span>
+                        </div>
+                        <div class="carousel">
+                            <ul>
+                                <li><span>20210521</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211031</span>
+                                </li>
+                                <li><span>20210522</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211032</span>
+                                </li>
+                                <li><span>20210523</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211033</span>
+                                </li>
+                                <li><span>20210524</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211034</span>
+                                </li>
+                                <li><span>20210525</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211035</span>
+                                </li>
+                                <li><span>20210526</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211036</span>
+                                </li>
+                                <li><span>20210527</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211037</span>
+                                </li>
+                                <li><span>20210528</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211038</span>
+                                </li>
+                                <li><span>20210529</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211039</span>
+                                </li>
+                                <li><span>202105210</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>2110310</span>
+                                </li>
+                                <li><span>202105211</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>2110311</span>
+                                </li>
+                                <li><span>202105212</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>2110312</span>
+                                </li>
+                                <li><span>202105213</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>2110313</span>
+                                </li>
+                                <li><span>202105214</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>2110314</span>
+                                </li>
+                                <li><span>202105215</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>2110315</span>
+                                </li>
+                                <li><span>20210521</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211031</span>
+                                </li>
+                                <li><span>20210522</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211032</span>
+                                </li>
+                                <li><span>20210523</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211033</span>
+                                </li>
+                                <li><span>20210524</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211034</span>
+                                </li>
+                                <li><span>20210525</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211035</span>
+                                </li>
+                                <li><span>20210526</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211036</span>
+                                </li>
+                                <li><span>20210527</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211037</span>
+                                </li>
+                                <li><span>20210528</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211038</span>
+                                </li>
+                                <li><span>20210529</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>211039</span>
+                                </li>
+                                <li><span>202105210</span><span>广东省深圳市宝安区黑马程序员B座南区4楼401</span><span>2110310</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 点位分布统计 -->
+            <div class="panel point">
+                <div class="inner">
+                    <h3>点位分布统计</h3>
+                    <div class="echart">
+                        <div class="pie"></div>
+                        <div class="data">
+                            <div class="item">
+                                <p>320,11</p>
+                                <span><i class="icon-dot" style="color:#ed3f35;"></i>点位总数</span>
+                            </div>
+                            <div class="item">
+                                <p>418</p>
+                                <span><i class="icon-dot" style="color: #eacf19;;"></i>本月新增</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <!-- 设备数据统计 -->
+            <div class="map">
+                <h3>
+                    <span class="icon-cube"></span>
+                    设备数据统计
+                </h3>
+                <div class="echart">
+                    <div class="geo"></div>
+                </div>
+            </div>
+            <!-- 全国用户总量统计 -->
+            <div class="panel user">
+                <div class="inner">
+                    <h3>全国用户总量统计</h3>
+                    <div class="echart">
+                        <div class="bar"></div>
+                        <div class="data">
+                            <div class="item">
+                                <p>120,899</p>
+                                <span><i class="icon-dot" style="color:#ed3f35;"></i>用户总量</span>
+                            </div>
+                            <div class="item">
+                                <p>248</p>
+                                <span><i class="icon-dot" style="color: #eacf19;;"></i>本月新增</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <!-- 订单总量 -->
+            <div class="panel order">
+                <div class="inner">
+                    <div class="head">
+                        <a href="javascript:;">360天</a>
+                        <span></span>
+                        <a class="active" href="javascript:;">90天</a>
+                        <span></span>
+                        <a href="javascript:;">30天</a>
+                        <span></span>
+                        <a href="javascript:;">24小时</a>
+                    </div>
+                    <div class="data">
+                        <div class="item">
+                            <p>20,301</p>
+                            <span><i class="icon-dot" style="color:#ed3f35;"></i>订单量</span>
+                        </div>
+                        <div class="item">
+                            <p>9834</p>
+                            <span><i class="icon-dot" style="color:#eacf14;"></i>销售额(万元)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 销售额统计 -->
+            <div class="panel sales">
+                <div class="inner">
+                    <h3>
+                        <span>销售额统计</span>
+                        <a href="javascript:;">年</a>
+                        <a class="active" href="javascript:;">月</a>
+                        <a href="javascript:;">日</a>
+                        <a href="javascript:;">周</a>
+                    </h3>
+                    <div class="echart">
+                        <div class="line"></div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 渠道分布 销售进度 -->
+            <div class="clearfix">
+                <div class="panel fl channel">
+                    <div class="inner">
+                        <h3>渠道分布</h3>
+                        <div class="data">
+                            <div class="item">
+                                <p><b>39</b><small>%</small></p>
+                                <span><i class="icon-plane"></i>机场</span>
+                            </div>
+                            <div class="item">
+                                <p><b>28</b><small>%</small></p>
+                                <span><i class="icon-bag"></i>商城</span>
+                            </div>
+                            <div class="item">
+                                <p><b>20</b><small>%</small></p>
+                                <span><i class="icon-train"></i>地铁</span>
+                            </div>
+                            <div class="item">
+                                <p><b>13</b><small>%</small></p>
+                                <span><i class="icon-bus"></i>火车站</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel fr quarter">
+                    <div class="inner">
+                        <h3>一季度销售进度</h3>
+                        <div class="echart">
+                            <div class="loop"></div>
+                            <div class="show"><b>75</b><small>%</small></div>
+                        </div>
+                        <div class="data">
+                            <div class="item">
+                                <p>1,321</p>
+                                <span><i class="icon-dot" style="color: #6acca3;"></i>销售额</span>
+                            </div>
+                            <div class="item">
+                                <p>150%</p>
+                                <span><i class="icon-dot" style="color: #ed3f2e;"></i>同比增长</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 全国热榜 -->
+            <div class="panel hot">
+                <div class="inner">
+                    <div class="all fl">
+                        <h3>全国热榜</h3>
+                        <div class="data">
+                            <p><i class="icon-cup1" style="color:#d93f36;"></i><span>可爱多</span></p>
+                            <p><i class="icon-cup2" style="color:#68d8fe;"></i><span>娃哈哈</span></p>
+                            <p><i class="icon-cup3" style="color:#4c9bfd;"></i><span>小洋人</span></p>
+                        </div>
+                    </div>
+                    <div class="province fr">
+                        <h3 class="clearfix"><b class="fl">各省热销</b><i class="fr">//近30天//</i></h3>
+                        <div class="data">
+                            <ul class="fl">
+                                <li><span>北京</span><b>25,179</b><i class="icon-up"></i></li>
+                                <li><span>河北</span><b>25,254</b><i class="icon-down"></i></li>
+                                <li><span>上海</span><b>34,456</b><i class="icon-up"></i></li>
+                                <li class="active"><span>广东</span><b>23,234</b><i class="icon-up"></i></li>
+                                <li><span>江苏</span><b>56,456</b><i class="icon-up"></i></li>
+                            </ul>
+                            <ul class="fr">
+                                <li><span>好多鱼</span><b>2,170</b><i class="icon-up"></i></li>
+                                <li><span>可爱多</span><b>9,086</b><i class="icon-up"></i></li>
+                                <li><span>娃哈哈</span><b>8,341</b><i class="icon-up"></i></li>
+                                <li><span>喜之郎</span><b>7,407</b><i class="icon-up"></i></li>
+                                <li><span>八喜</span><b>6,080</b><i class="icon-up"></i></li>
+                                <li><span>小洋人</span><b>6,724</b><i class="icon-up"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+<script src="./js/china.js"></script>
+<script src="./js/map.js"></script>
+
+
+</html>
