@@ -1,7 +1,7 @@
 // axios相关的配置
 
 // todo ======================= 配置全局请求根路径 =======================
-axios.defaults.baseURL = 'http://www.itcbc.com:8000'
+axios.defaults.baseURL = 'https://www.itcbc.com:8000'
 // todo ======================= 添加请求拦截器 =======================
 axios.interceptors.request.use(
     function (config) {
